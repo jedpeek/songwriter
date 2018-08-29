@@ -1,0 +1,10 @@
+<header>
+  <%= form_tag(@user) do %>
+    <%= text_field_tag :username, '',class:'', placeholder: "Login with Username"%>
+    <%= password_field_tag :password, '',class:'', placeholder: "Password"%>
+  <% end %>
+
+  <br>
+  <br>
+  <%=link_to "Login via GitHub", "/auth/github" %>
+</header>
